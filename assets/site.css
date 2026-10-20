@@ -14,7 +14,7 @@ a:hover{filter:brightness(.85)}
 .page [data-pencil-name='Hero — Japanese mobility'],.page [data-pencil-name='Japanese car hero photograph'],.page [data-pencil-name='Hero contrast overlay']{width:100%}
 .page [data-pencil-name='Hero bottom caption']{width:calc(100% - 128px)}
 .mobile-home{display:none}
-.menu-toggle{display:none;border:0;background:transparent;cursor:pointer;padding:0;font-size:26px;line-height:1;width:28px;height:28px;align-items:center;justify-content:center}
+.menu-toggle{display:none;border:0;background:transparent;cursor:pointer;padding:0;font-size:32px;line-height:1;width:44px;height:44px;align-items:center;justify-content:center}
 header{position:relative;z-index:10}
 .mobile-menu{position:absolute;left:0;right:0;top:100%;background:#fff;padding:20px 24px 28px;border-top:1px solid #ccd6d1;box-shadow:0 12px 20px #102d2b0d;display:flex;flex-direction:column;gap:22px}
 .mobile-menu[hidden]{display:none}
