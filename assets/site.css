@@ -1,0 +1,89 @@
+:root{--ink:#102d2b;--accent:#d5f568;--paper:#f3f6f5;--muted:#60716d}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:28px}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Noto Sans JP',sans-serif}
+h1,h2,h3,p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible{outline:3px solid #719b22;outline-offset:6px}
+a:hover{filter:brightness(.85)}
+.page{width:100%;max-width:1440px;margin:0 auto;min-width:0}
+.page>*{max-width:100%}
+.page [data-pencil-name]{min-width:0}
+.page [data-pencil-name='Hero — Japanese mobility'],.page [data-pencil-name='Japanese car hero photograph'],.page [data-pencil-name='Hero contrast overlay']{width:100%}
+.page [data-pencil-name='Hero bottom caption']{width:calc(100% - 128px)}
+.mobile-home{display:none}
+.menu-toggle{display:none;border:0;background:transparent;cursor:pointer;padding:0;font-size:26px;line-height:1;width:28px;height:28px;align-items:center;justify-content:center}
+header{position:relative;z-index:10}
+.mobile-menu{position:absolute;left:0;right:0;top:100%;background:#fff;padding:20px 24px 28px;border-top:1px solid #ccd6d1;box-shadow:0 12px 20px #102d2b0d;display:flex;flex-direction:column;gap:22px}
+.mobile-menu[hidden]{display:none}
+.mobile-menu a{font-size:15px}
+.mobile-menu a[aria-current='page']{font-weight:700}
+.mobile-menu .phone{border-top:1px solid #ccd6d1;padding-top:20px}
+.skip-link{position:fixed;left:16px;top:-100px;padding:12px 18px;background:var(--accent);z-index:1000}
+.skip-link:focus{top:16px}
+[data-pencil-name='Brand wordmark']{filter:none}
+[data-pencil-name='サービスを見る']:hover{background:#c9e95c}
+@media(min-width:761px) and (max-width:1200px){
+ .page>[data-pencil-name='Global navigation']{padding-left:40px;padding-right:40px}
+ .page>[data-pencil-name='Our approach'],.page>[data-pencil-name='Brand promise'],.page>[data-pencil-name='Company philosophy']{gap:50px;padding-left:40px;padding-right:40px}
+ [data-pencil-name='Approach title'],[data-pencil-name='Mission heading']{width:38%}
+ [data-pencil-name='Promise service principle']{width:42%;padding:30px}
+ [data-pencil-name='Principle English']{width:100%;font-size:30px}
+ [data-pencil-name='中古車販売 photograph'],[data-pencil-name='レンタカー photograph']{width:45%}
+ [data-pencil-name='中古車販売 feature'],[data-pencil-name='レンタカー feature']{gap:36px}
+ [data-pencil-name='Featured service cards']{gap:20px}
+ [data-pencil-name='Service summary 中古車販売'],[data-pencil-name='Service summary レンタカー'],[data-pencil-name='Service summary 整備・車検']{font-size:13px}
+ [data-pencil-name='Hero editorial content']{left:40px;width:calc(100% - 80px)}
+}
+@media(max-width:760px){
+ .desktop-home{display:none}
+ .mobile-home{display:flex;width:100%;max-width:760px;margin:auto;min-width:0}
+ .mobile-home *{min-width:0}
+ .mobile-home>[data-pencil-name='Mobile hero'],[data-pencil-name='Mobile hero photo'],[data-pencil-name='Mobile hero overlay']{width:100%}
+ [data-pencil-name='Mobile hero copy']{width:calc(100% - 48px)}
+ [data-pencil-name='Mobile hero headline'],[data-pencil-name='Mobile hero description']{width:100%}
+ .menu-toggle{display:flex;flex-shrink:0}
+ .page [data-pencil-name='Page navigation']{display:none}
+ .page [data-pencil-name='Global navigation']{height:74px;padding:0 24px}
+ .page [data-pencil-name='Anne MX wordmark']{font-size:26px}
+ .page [data-pencil-name='Brand descriptor']{display:none}
+ .page>[data-pencil-name='Services page introduction'],.page>[data-pencil-name='Company introduction']{padding:44px 24px;gap:18px}
+ [data-pencil-name='English page title'],[data-pencil-name='English title']{font-size:42px;line-height:1.25;white-space:normal;width:100%}
+ [data-pencil-name='Japanese page title'],[data-pencil-name='Japanese title']{font-size:23px;line-height:1.65;white-space:normal}
+ [data-pencil-name='Services introduction']{width:100%;font-size:14px;line-height:1.85}
+ [data-pencil-name='Service category navigation']{padding:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+ .page>[data-pencil-name='Main mobility services']{padding:40px 24px;gap:44px}
+ [data-pencil-name='中古車販売 feature'],[data-pencil-name='レンタカー feature']{flex-direction:column;align-items:stretch;gap:24px}
+ [data-pencil-name='中古車販売 photograph'],[data-pencil-name='レンタカー photograph']{width:100%;height:240px}
+ [data-pencil-name='中古車販売 details'],[data-pencil-name='レンタカー details']{flex:auto;width:100%;gap:14px}
+ [data-pencil-name='Service name']{font-size:28px;line-height:1.5}
+ [data-pencil-name='Service tagline']{font-size:20px;line-height:1.6;white-space:normal}
+ .page>[data-pencil-name='Ownership support services'],.page>[data-pencil-name='Consultation process'],.page>[data-pencil-name='Office locations']{padding:40px 24px;gap:24px}
+ .page [data-pencil-name='Section heading']{font-size:27px;line-height:1.65;white-space:normal}
+ [data-pencil-name='Support services row'],[data-pencil-name='Three step process'],[data-pencil-name='Office columns']{flex-direction:column;gap:26px}
+ [data-pencil-name^='Support '],[data-pencil-name^='Step ']{flex:auto;width:100%}
+ .page>[data-pencil-name='Company philosophy']{padding:40px 24px;flex-direction:column;gap:28px}
+ [data-pencil-name='Mission heading'],[data-pencil-name='Mission statement']{width:100%;flex:auto}
+ [data-pencil-name='Company mission text']{font-size:14px;line-height:1.9}
+ .page>[data-pencil-name='Company facts']{padding:0 24px 40px;gap:22px}
+ [data-pencil-name^='Company fact ']{flex-direction:column;gap:10px;padding:20px 0}
+ [data-pencil-name='Fact label'],[data-pencil-name='Fact value']{width:100%;font-size:14px}
+ [data-pencil-name='Office columns']>div{width:100%;flex:auto;padding:24px}
+ [data-pencil-name='Office address']{font-size:14px;white-space:normal}
+ .page>[data-pencil-name='Footer']{padding:36px 24px;gap:24px}
+ [data-pencil-name='Footer content']{flex-direction:column;gap:24px}
+ [data-pencil-name='Footer addresses']{width:100%}
+ [data-pencil-name='Head office'],[data-pencil-name='Kashiwara office']{font-size:11px;white-space:normal}
+ [data-pencil-name='Copyright']{font-size:10px;white-space:normal}
+}
+@media(max-width:360px){[data-pencil-name='Mobile hero headline']{font-size:30px}[data-pencil-name='Mobile services heading']{font-size:25px}[data-pencil-name='Mobile addresses']{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(min-width:761px) and (max-width:1200px){
+ [data-pencil-name='Main Japanese headline']{width:100%;font-size:56px;line-height:1.4}
+ [data-pencil-name='Principle Japanese']{width:100%}
+ .page [data-pencil-name='Section heading'],[data-pencil-name='Japanese page title'],[data-pencil-name='Japanese title']{white-space:normal}
+ [data-pencil-name='Services introduction']{width:100%}
+ [data-pencil-name='Service tagline']{white-space:normal}
+}
